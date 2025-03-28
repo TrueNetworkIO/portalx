@@ -1,17 +1,23 @@
 {
   "name": "portalx",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Portalx is backend tooling for true network to setup mixpanel for analytics.",
+  "main": "src/index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Tushar Ojha",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "@polkadot/types": "^15.9.1",
     "@truenetworkio/sdk": "^0.0.21",
+    "dotenv": "^16.4.7",
     "mixpanel": "^0.18.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
 }
