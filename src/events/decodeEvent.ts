@@ -20,7 +20,7 @@ export const decodeEvent = (event: any, api: TrueApi): FormattedEvent | null => 
             },
             {
               name: 'Amount',
-              value: formatSubstrateBalance(data['amount'].toString()) + ' TRUE',
+              value: Number(formatSubstrateBalance(data['amount'].toString())),
               description: 'Amount reserved'
             }
           ]
@@ -37,7 +37,7 @@ export const decodeEvent = (event: any, api: TrueApi): FormattedEvent | null => 
             },
             {
               name: 'Amount',
-              value: formatSubstrateBalance(data['amount'].toString()) + ' TRUE',
+              value: Number(formatSubstrateBalance(data['amount'].toString())),
               description: 'Amount reserved'
             }
           ]
@@ -59,7 +59,7 @@ export const decodeEvent = (event: any, api: TrueApi): FormattedEvent | null => 
             },
             {
               name: 'Amount',
-              value: formatSubstrateBalance(data['amount'].toString()) + ' TRUE',
+              value: Number(formatSubstrateBalance(data['amount'].toString())),
               description: 'Amount transferred'
             }
           ]
