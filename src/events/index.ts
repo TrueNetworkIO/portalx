@@ -60,12 +60,12 @@ const subscribeNewHeads = async (trueApi: TrueApi, mixpanel: Mixpanel) => {
     }
 
     // Optionally track a summary of the block
-    mixpanel.track('Block Processed', {
-      blockHash: header.hash.toString(),
-      timestamp,
-      eventCount: blockEvents.length,
-      eventTypes: blockEvents.map(e => e.eventName)
-    });
+    // mixpanel.track('Block Processed', {
+    //   blockHash: header.hash.toString(),
+    //   timestamp,
+    //   eventCount: blockEvents.length,
+    //   eventTypes: blockEvents.map(e => e.eventName)
+    // });
   })
 }
 
